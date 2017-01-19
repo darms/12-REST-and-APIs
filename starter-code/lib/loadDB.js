@@ -7,10 +7,10 @@ const Pool = pg.Pool
 const ops = module.exports = {}
 
 const pool = new Pool({
-  user: process.env.USER,
-  password: '',
+  user: 'postgres',
+  password: '5uper',
   host: 'localhost',
-  database: process.env.USER,
+  database: 'postgres',
   max: 10,
   idleTimeoutMillis: 1000
 })
